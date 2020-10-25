@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Serpentine;
+  src: url(font/Serpentine-Bold.otf);
+}
+@font-face { /* Main font is already bold, so <b> will revert to light text */
+  font-family: Serpentine;
+  src: url(font/Serpentine-Light.otf);
+  font-weight: bold;
+}
+body {
+  margin: 0; /* review and adjust */
+  font-family: Serpentine;
+  font-size: 24px;
+  color: rgb(255, 240, 240);
+  text-shadow: 2px 2px rgb(90, 0, 0);
+  background-color: rgb(4, 0, 0);
+}
+h1 {
+  font-weight: normal;
+  color: rgb(255, 240, 240);
+  text-shadow: 4px 4px rgb(4, 0, 0);
+  background-color: rgb(90, 0, 0);
+  padding-left: 10%;
+  margin: 0 0;
+  border-radius: 5px;
+  box-shadow: 4px 4px rgb(4, 0, 0);
+}
+.footer {
+  text-align: center;
+  width: 99%;
+  position: absolute;
+  bottom: 0;
+}
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  color: rgb(255, 240, 240);
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a.active {
+  background-color: rgb(90, 0, 0);
+  color: white;
+  border-radius: 5px;
+}      
+.pagination a:hover:not(.active) {
+  background-color: rgb(90, 50, 50);
+  border-radius: 5px;
+}
+.theater {
+  background-image: url(image/theater4.png);
+  background-size: 640px 640px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: auto;
+  z-index: 2;
+  padding: 10% 0;
+}
+.video {
+  display: block;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 3;
+  transform: translate(0px,5px)
+}
